@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Roboto&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+@import url('https://unpkg.com/boxicons@latest/css');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://unpkg.com/boxicons@latest/css/boxicons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Righteous&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --BGCOLOR: #000D11;
+    --FONT-COLOR: #EEE5E9;
+    --FF: 'Poppins', sans-serif;
+    --FF-BRAND: 'Righteous', cursive;
+}
+
+
+body{
+    user-select: none;
+    min-width: 40%; 
+    max-height: 100vh;
+    background: #000D11;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .bio-title{
+    margin: 0;
+    padding-top: 10px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease-in-out;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-family:var(--FF-BRAND) ;
+}
+
+.brand span{
+    color: var(--FONT-COLOR);
+    font-size: 1.4em;
+    letter-spacing: -0.5px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: #E5EDF0;
+    font-family: var(--FF);
+    font-size: 13px;
+    padding: 1px 0;
+    margin: 0px 14px;
+    font-weight: 600;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: #7C7C7C;
+}
+
+.navbar a.active{
+    color: #7C7C7C;
+}
+.tocont{
+    display: flex;
+    align-items: center;
+}
+
+.tocontact{
+    letter-spacing: 0.5px;
+    font-size: 0.8em;
+    background: #D9D9D9;
+}
+.tocont a{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #40AEDA;
+    color: var(--BGCOLOR);
+    font-weight: 800;
+    font-family: var(--FF);
+    margin-right: 30px;
+}
+
+
+#home-menu-icon{
+    color: #7C7C7C;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 100001;
+    display: none;
+}
+
+/* MAIN HOME*/
+
+.homemain{
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    text-align: center;
+    font-family: var(--FF);
+    color: var(--FONT-COLOR);
+    font-size: 21.5px;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name{
+    color: #88DBFB;
+}
+
+.address{
+    font-size: 12px;
+    font-weight: bolder;
+    color: #7C7C7C;
+}
+
+.img{
+    border: 2px solid #40AEDA;
+    border-radius: 50% !important;
+    max-width: 114px;
+    max-height: auto;
+}
+
+.resume{
+    color: #000D11;
+    background: #E5EDF0;
+    padding: 9px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: bolder;
+    box-shadow: 4px 4px #40AEDA;
+    transition: 0.6s;
+}
+
+.resume:hover{
+    box-shadow: none;
+}
+
+.resume a{
+    text-decoration: none;
+    color: #000D11;
+}
+
+.bio-title .home-bio{
+    min-width: 400px;
+    line-height: 1.4;
+    font-size: 0.9em;
+}
+
+
+@media (max-width: 1280px) {
+
+    .homeheader{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+        position: fixed;
+        right: 1px;
+    }
+
+    .tocontact{
+        z-index: 1;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 0;
+        right: -100% !important;
+        width: 270px;
+        height: 45vh;
+        background: #0b1824d0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 12px;
+        transition: all  1s .0s ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+    }
+    .navbar.open{
+        right: 0 !important;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.7, user-scalable=0">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/IMG/android-chrome-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <header>
+        <a href="/index.html" class="brand"><span>bahati.</span></a>
+        <ul class="navbar">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+        </ul>
+        <div class="main">
+            <a href="signup.html" class="signup">Sign Up</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="main-container">
+        <form autocomplete="on" spellcheck="false">
+            <div class="links">
+                <a href="https://github.com/bahati10" target="_blank"><img class="one" src="/IMG/square-github.svg"
+                        alt=""></a>
+                <a href="https://twitter.com/Bahati____" target="_blank"><img class="two" src="/IMG/square-twitter.svg"
+                        alt=""></a>
+                <a href="mailto:bahatiyves10@gmail.com" target="_blank"><img class="three" src="/IMG/envelope-solid.svg"
+                        alt=""></a>
+                <a href="https://www.linkedin.com/in/bahati-yves-439aab1a2/" target="_blank"><img class="four"
+                        src="/IMG/linkedin.svg" alt=""></a>
+            </div>
+            <label class="name" for="name">Names</label>
+            <input type="name" id="form-name" autocomplete="off" onkeyup="validateName()">
+            <span id="name-error" class="one1"></span>
+            <label class="email" for="email">Email</label>
+            <input type="email" id="form-email" autocomplete="off" onkeyup="validateMail()">
+            <span id="email-error" class="two2"></span>
+            <label class="message" for="text">Message</label>
+            <textarea name="message" id="form-message" cols="30" rows="8" autocomplete="off"
+                onkeyup="validateMessage()"></textarea>
+            <span id="message-error" class="three3"></span>
+            <button class="send" type="submit">Send</button>
+            <span id="submit-error"></span>
+        </form>
+        <id id="success">
+            <div class="modal">
+                <div class="icon"><i id="icon1" class="fa-regular fa-circle-check"></i></div>
+                <h4>Message Sent<br> Successfully</h4>
+            </div>
+        </id>
+    </div>
+    <script src="/JS/contact.js"></script>
+    <script src="/JS/index.js" defer></script>
+</body>
+
+
+</html>
