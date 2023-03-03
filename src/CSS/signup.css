@@ -186,7 +186,7 @@ input:-webkit-autofill{
     margin-top: 15%;
 }
 
-.sign {
+.sign-up {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -202,7 +202,7 @@ input:-webkit-autofill{
     transition: 0.6s;
 }
 
-.sign:hover {
+.sign-up:hover {
     box-shadow: none;
 }
 
@@ -409,7 +409,7 @@ h4{
         padding: 40px 40px;
     }
 
-    .sign {
+    .sign-up {
         box-shadow: 5px 5px #40AEDA;
         padding: 12px 20px;
         font-size: 19px;

@@ -33,7 +33,7 @@ export default function Signup() {
             <label className="su-password" htmlFor="password">Password</label>
             <input type="password" id="su-form-password" spellCheck="false" onkeyup="validatePassword()" />
             <span id="su-password-error" /> <br />
-            <button className="sign" type="submit">Sign Up</button>
+            <button className="sign-up" type="submit">Sign Up</button>
             <span id="su-submit-error" />
           </form>
           <id id="success">
